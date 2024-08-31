@@ -1,0 +1,180 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgba(206, 213, 0, 0.265);
+}
+
+.Todo {
+  background: linear-gradient(
+    145deg,
+    rgba(0, 217, 255, 0.758),
+    rgba(0, 132, 79, 0.822)
+  );
+  width: 400px;
+  height: 500px;
+  display: flex;
+  /* justify-content: center; */
+  align-items: center;
+  padding: 15px;
+
+  flex-direction:column;
+}
+#deleteAll{
+    margin-left: 300px;
+    background-color: transparent;
+    border: none;
+   
+}
+#deleteAll img{
+    width: 30px;
+   
+    border-radius: 100px;
+}
+.head {
+  font-size: 20px;
+  color: white;
+  font-weight: 900;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+.line {
+  width: 100%;
+  background: white;
+  height: 1.4px;
+  margin-top: 10px;
+}
+
+.List {
+  width: 100%;
+  /* background: blue; */
+  height: 100%;
+  margin-top: 10px;
+  overflow: scroll;
+  overflow-x: hidden;
+}
+
+.List::-webkit-scrollbar {
+  background: rgba(0, 0, 255, 0.817);
+  width: 10px;
+}
+
+.List::-webkit-scrollbar-thumb {
+  background: rgba(255, 0, 0, 0.614);
+  width: 5px;
+  border-radius: 20px;
+}
+.to {
+  margin-top: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* background: blue; */
+  min-height: 50px;
+  padding-right: 20px;
+  padding-left: 20px;
+  background: rgba(128, 128, 128, 0.397);
+}
+
+.an {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.text {
+  font-size: 20px;
+  font-weight: 600;
+  color: white;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  margin-left: 20px;
+}
+
+.cancel {
+  color: white;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  background: black;
+  width: 25px;
+  height: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.Popup {
+  display: none;
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.68);
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.pop {
+  background: rgba(0, 0, 0, 0.527);
+  width: 350px;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.close {
+  background: rgba(0, 0, 0, 0.527);
+  width: 350px;
+  display: flex;
+  justify-content: end;
+}
+
+.close .red {
+  background: red;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+}
+
+.pop textarea {
+  max-width: 300px;
+  width: 300px;
+  padding: 10px;
+}
+
+.pop button {
+  background: rgb(0, 31, 126);
+  width: 82%;
+  height: 20px;
+  margin-top: 20px;
+  border: none;
+  color: white;
+  height: 40px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+.open {
+  width: 100%;
+  height: 40px;
+  background: rgba(0, 0, 0, 0.813);
+  border: none;
+  outline: none;
+  color: white;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-weight: 900;
+  border-radius: 2px;
+}
+.check{
+    transition: all ease 2s;
+}

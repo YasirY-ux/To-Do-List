@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="Todo">
+        <h2 class="head">Todo</h2>
+        <button id="deleteAll"><img src="https://cdn-icons-png.flaticon.com/128/6711/6711573.png" alt="Delete All"></button>
+        <div class="line"></div>
+        <div class="List">
+            <div class="to">
+                <div class="an">
+                    <input type="checkbox" class="check">
+                    <p class="text">This is default</p>
+                </div>
+                <p class="cancel">X</p>
+            </div>
+        </div>
+        <button class="open">Add Todo</button>
+    </div>
+    <div class="Popup">
+        <div class="close">
+            <div class="red"></div>
+        </div>
+        <div class="pop">
+            <textarea id="input" placeholder="type here..."></textarea>
+            <button onclick="addto()">Add Todo</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
